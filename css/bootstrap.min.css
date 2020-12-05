@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #1c4b82;
   --indigo: #0d0cb5;
   --purple: #7971ea;
@@ -24,7 +24,7 @@
   --info: #17a2b8;
   --warning: #f89d13;
   --danger: #f23a2e;
-  --light: #FFF;
+  --light: #f8f9fa;
   --dark: #343a40;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -1655,8 +1655,7 @@ textarea.form-control {
   height: auto; }
 
 .form-group {
-  margin-bottom: 1rem;
-  border-color: #000;}
+  margin-bottom: 1rem; }
 
 .form-text {
   display: block;
@@ -2144,8 +2143,8 @@ fieldset:disabled a.btn {
 
 .btn-light {
   color: #212529;
-  background-color: #FFF;
-  border-color: #FFF; }
+  background-color: #f8f9fa;
+  border-color: #f8f9fa; }
   .btn-light:hover {
     color: #212529;
     background-color: #e2e6ea;
@@ -2155,8 +2154,8 @@ fieldset:disabled a.btn {
     box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
   .btn-light.disabled, .btn-light:disabled {
     color: #212529;
-    background-color: #FFF;
-    border-color: #FFF; }
+    background-color: #f8f9fa;
+    border-color: #f8f9fa; }
   .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
   .show > .btn-light.dropdown-toggle {
     color: #212529;
@@ -2343,25 +2342,25 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(242, 58, 46, 0.5); }
 
 .btn-outline-light {
-  color: #FFF;
+  color: #f8f9fa;
   background-color: transparent;
   background-image: none;
-  border-color: #FFF; }
+  border-color: #f8f9fa; }
   .btn-outline-light:hover {
     color: #212529;
-    background-color: #FFF;
-    border-color: #FFF; }
+    background-color: #f8f9fa;
+    border-color: #f8f9fa; }
   .btn-outline-light:focus, .btn-outline-light.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
   .btn-outline-light.disabled, .btn-outline-light:disabled {
-    color: #FFF;
+    color: #f8f9fa;
     background-color: transparent; }
   .btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active,
   .show > .btn-outline-light.dropdown-toggle {
     color: #212529;
-    background-color: #FFF;
-    border-color: #FFF; }
+    background-color: #f8f9fa;
+    border-color: #f8f9fa; }
     .btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-light.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
@@ -2610,7 +2609,7 @@ input[type="button"].btn-block {
   .dropdown-item:hover, .dropdown-item:focus {
     color: #16181b;
     text-decoration: none;
-    background-color: #FFF; }
+    background-color: #f8f9fa; }
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
@@ -4029,7 +4028,7 @@ input[type="button"].btn-block {
 
 .badge-light {
   color: #212529;
-  background-color: #FFF; }
+  background-color: #f8f9fa; }
   .badge-light[href]:hover, .badge-light[href]:focus {
     color: #212529;
     text-decoration: none;
@@ -4238,7 +4237,7 @@ input[type="button"].btn-block {
   .list-group-item-action:hover, .list-group-item-action:focus {
     color: #495057;
     text-decoration: none;
-    background-color: #FFF; }
+    background-color: #f8f9fa; }
   .list-group-item-action:active {
     color: #212529;
     background-color: #e9ecef; }
@@ -5032,7 +5031,7 @@ button.bg-danger:focus {
   background-color: #df1b0e !important; }
 
 .bg-light {
-  background-color: #FFF !important; }
+  background-color: #f8f9fa !important; }
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
@@ -5102,7 +5101,7 @@ button.bg-dark:focus {
   border-color: #f23a2e !important; }
 
 .border-light {
-  border-color: #FFF !important; }
+  border-color: #f8f9fa !important; }
 
 .border-dark {
   border-color: #343a40 !important; }
@@ -7227,7 +7226,7 @@ a.text-danger:hover, a.text-danger:focus {
   color: #df1b0e !important; }
 
 .text-light {
-  color: #FFF !important; }
+  color: #f8f9fa !important; }
 
 a.text-light:hover, a.text-light:focus {
   color: #dae0e5 !important; }
