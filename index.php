@@ -9,9 +9,9 @@
                 <div class="container">
                   <div class="row align-items-center" >
                     <div class="col-12">
-                      <div class="row justify-content-center">
+                      <div class="row justify-content-center text-center">
                         <div class="col-lg-1"></div>
-                        <div class="col-lg-6 col-md-5 pr-5">
+                        <div class="col-lg-6 col-md-12">
                           <br>
                           <br>
                           <br>
@@ -19,8 +19,8 @@
                           <p class="mb-4 text-center">A vida é um conjunto de ciclos, cabe a nós nos adaptarmos e prepararmos para tais. Venha fazer parte do nosso time, e juntos, realizaremos grandes conquistas. Automatize suas vendas, acompanha de perto seus resultados, faça um upgrade e comece uma nova etapa  da melhor forma. </p>
                         </div>
                         
-                        <div class="col-lg-4 col-md-12 pl-3">
-                          <form id="form-2" method="post" class="form-box row">
+                        <div class="col-lg-4 col-md-12">
+                          <form id="form-2" name="form-2" method="post" class="form-box row">
                             <br>
                             <h3 class="h4 mb-4 text-white" >Junte-se a nós! </h3>
                             <p style="margin-top:-20px;">Faça seu orçamento gratuitamente!</p>
@@ -51,31 +51,33 @@
             <div class="carousel-item">
               <div class="slide-2" style="background-image: url('images/FUNDO.jpg');" data-stellar-background-ratio="0.5" alt="Second Slide">
                 <div class="container">
-                  <div class="row align-items-center justify-content-center pt-5" >
-                    <div class="col-lg-6 col-md-5 justify-content-center">
-                      <div class="justify-content-center">
-                        <h3  data-aos="fade-up" data-aos-delay="100">O amanhã depende somente de você!</h3>
+                  <div class="row justify-content-center align-items-center pt-5 text-center" >
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-6 col-md-12 pt-5 justify-content-center">
+                      <div>
+                        <h3>O amanhã depende somente de você!</h3>
                       </div>
-                      <div class="justify-content-center">
+                      <div>
                         <p class="text-center">O sucesso nasce do querer, da determinação e persistência em se chegar a um objetivo. Mesmo não atingindo o alvo, quem busca e vence obstáculos, no mínimo fará coisas admiráveis</p>
                         <p class="text-center pt-2"><a href="#produtos" id="btnsaiba2">Saiba mais!</a></p>
                       </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 justify-content-center">
+                    <div class="col-lg-4 col-md-12 justify-content-center">
                       <img src="images/undraw_teaching.svg" alt="Image" class="img-fluid" style="width: 500px;">
                     </div>
+                    <div class="col-lg-1"></div>
                   </div>
                 </div>
               </div>
             </div>
             <div>
               <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only"></span>
+                <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                <span class="sr-only">Previous</span>
               </a>
               <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only"></span>
+                <span class="sr-only">Next</span>
               </a>
             </div>
           </div>
@@ -269,8 +271,8 @@
           </div>
 
           <div class="row">
-            <div class="col-md-0 col-lg-4"></div>
-            <div class="col-md-3 col-lg-4" id="profissional">
+            <div class="col-md-3 col-lg-4"></div>
+            <div class="col-md-6 col-lg-4" id="profissional">
               <div class="teacher">
                 <img src="images/person_2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
                 <div >
@@ -280,7 +282,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-0 col-lg-4"></div>
+            <div class="col-md-3 col-lg-4"></div>
           </div>
         </div>
       </div>
@@ -288,10 +290,10 @@
       <div class="site-section">
         <div class="container">
           <div class="row justify-content-center">
-            <div class="col-lg-9 mb-5 text-center">
+            <div class="col-lg-9 text-center">
               <h4 class="section-title"><b>Por que nossos serviços?</b></h4>
             </div>
-            <div class="col-lg-6 ml-auto">
+            <div class="col-lg-6 col-md-12 justify-content-center d-flex align-items-center">
               <div class="bg-white why-choose-us-box">
                 <div class="d-flex align-items-center custom-icon-wrap custom-icon-light mb-3">
                   <div class="mr-3"><span class="custom-icon-inner"><span class="icon   icon-legal"></span></span></div>
@@ -325,7 +327,7 @@
               </div>
             </div>
             <div class="col-lg-1"></div>
-            <div class="col-lg-4 text-center ml-5" >
+            <div class="col-lg-4 col-md-12 mt-5 text-center ml-5" >
               <img src="images/person_transparent.png" alt="Image" style="width: 420px;">
             </div>
           </div>

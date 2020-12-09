@@ -23,7 +23,7 @@ $('#form-2').submit(function(e){
                 $('#sobrenome2').val('');
                 $('#telefone2').val('');
                 $('#mensagem2').val('');
-            
+                
             }else{
                 $('#div-mensagem2').addClass('text-danger')
                 $('#div-mensagem2').text(msg);

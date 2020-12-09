@@ -59,7 +59,7 @@
         </div>   
     
         <div class="col-12 footer__copyright">
-            <p>Copyright WEBPASSOS ©<script>document.write(new Date().getFullYear());</script>2020 Todos direitos reservados.<a href="https://webpassos.com.br/pag/politicas.php"> Políticas</a> &amp; <a href="https://webpassos.com.br/pag/cookies.php"> Cookies.</a> Desenvolvido por <a href="https://samuelsergio.com">Samuel Sergio</a></p></div>
+            <p>Copyright WEBPASSOS ©<script>document.write(new Date().getFullYear());</script> Todos direitos reservados.<a href="https://webpassos.com.br/politicas.php"> Políticas</a> &amp; <a href="https://webpassos.com.br/cookies.php"> Cookies.</a> Desenvolvido por <a href="https://samuelsergio.com">Samuel Sergio</a></p></div>
         </div>
     </footer>
       <script src="js/bootstrap.min.js"></script>
