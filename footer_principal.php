@@ -62,18 +62,9 @@
             <p>Copyright WEBPASSOS ©<script>document.write(new Date().getFullYear());</script> Todos direitos reservados.<a href="https://webpassos.com.br/politicas.php"> Políticas</a> &amp; <a href="https://webpassos.com.br/cookies.php"> Cookies.</a> Desenvolvido por <a href="https://samuelsergio.com">Samuel Sergio</a></p></div>
         </div>
     </footer>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery-migrate-3.0.1.min.js"></script>
-      <script src="js/jquery-ui.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/jquery.stellar.min.js"></script>
-      <script src="js/jquery.countdown.min.js"></script>
-      <script src="js/bootstrap-datepicker.min.js"></script>
-      <script src="js/jquery.easing.1.3.js"></script>
-      <script src="js/jquery.fancybox.min.js"></script>
-      <script src="js/jquery.sticky.js"></script>
       <script src="js/main.js"></script>
+      <script src="js/bootstrap-datepicker.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
       <script src="js/enviar-email.js"></script>
     </div>
   </body>

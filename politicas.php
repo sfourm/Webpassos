@@ -7,72 +7,56 @@
     <meta name="description" content="Desenvolvimento de sites e sistemas web. Amplie sua marca com sites responsivos, otimizados e ideal para comercialização e engajamento. Sites e-commerce, portfólio, plataformas de curso e ensino a distancia, sites para casamentos e e diversos outros.">
     <meta name="keywords" content="criar site, sites, desenvolvimento web, sites em Passos-MG, sites em HTML, sites em CSS, desenvolvimento de sites, marketing, construção de sites, sistemas em Passos-MG, site em Passos-MG,">
     <meta name="author" content="Samuel Sergio">
-    <link rel="shortcut icon" type="imagem/x-icon" href="images/icone.png"/>
     
-    <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link rel="shortcut icon" type="imagem/x-icon" href="images/icone.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="fonts/social midia/flaticon.css">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-    <link rel="stylesheet" href="social midia/flaticon.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/paginas.css">
-
+    <link rel="stylesheet" href="css/style.css" >
+   
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script src="js/mascara.js"></script> 
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <div class="wrapper" style="position: relative;"> 
-      <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
-          </div>
-        </div>
-        <div class="site-mobile-menu-body"></div>
-      </div>
-    
-      <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-        <div class="container-fluid">
-          <div class="d-flex align-items-center">
-            <div><a href="index.php"><img src="images/logo.png" href="index.html" style="height: 37.5px; width: 150px,"></img></a></div>
-            <div class="mx-auto text-center">
+  <body>
+    <div class="wrapper" > 
+     
+    <header class="site-navbar py-4 " role="banner">
+        <div class="container-fluid ">
+          <div class="d-flex align-items-center justify-content-between">
+            <div class="text-left"><a href="index.php#home"><img src="images/logo.png" href="index.html" class="site-logo"></img></a></div>
+
+            <div class="mx-auto d-lg-inline-block">
               <nav class="site-navigation" role="navigation"i>
-                <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0" style="font-family:'Poppins', sans-serif; font-size: 12px;">
-                <li><a href="#termos" class="nav-link">Termos de Uso</a></li>
-                <li><a href="#dados" class="nav-link">Dados</a></li>
-                <li><a href="#uso" class="nav-link">Condições de uso</a></li>
-                <li><a href="#registro" class="nav-link">Registro e Finalidade</a></li>
-                <li><a href="#cancelamento" class="nav-link">Direitos</a></li>
-                <li><a href="#seguranca" class="nav-link">Segurança</a></li>
+                <ul class="site-menu mx-auto m-0 p-0">
+                  <li><a href="#termos" class="nav-link">Termos de Uso</a></li>
+                  <li><a href="#dados" class="nav-link">Dados</a></li>
+                  <li><a href="#uso" class="nav-link">Condições de uso</a></li>
+                  <li><a href="#registro" class="nav-link">Registro e Finalidade</a></li>
+                  <li><a href="#cancelamento" class="nav-link">Direitos</a></li>
+                  <li><a href="#seguranca" class="nav-link">Segurança</a></li>
                 </ul>
               </nav>
             </div>
 
-            <div class="">
-              <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span style="color: white" class="icon-menu h3"></span></a>
-            </div>
           </div>
         </div>  
       </header>
   <!-- INICIO do conteudo principal. -->
       <div class="intro-section3">
-        <div class="slide-3" data-stellar-background-ratio="0.5">
+        <div class="slide-3" >
           <div class="container">
             <div class="row align-items-center">
               <div class="col-12">
                 <div class="row justify-content-center align-items-center text-center">
                   <div class="col-lg-7">
                     </br></br>
-                    <h1 data-aos="fade-up" data-aos-delay="0">Políticas WebPassos</h1>
+                    <h1>Políticas WebPassos</h1>
                   </div>
                 </div>
               </div>
@@ -85,14 +69,14 @@
             <div class= "pr-3 pl-3">
               <div  class= "mr-5 ml-3">
                 <div class="justify-content-center text-center" >
-                  <h4 style="text-align: center;">TERMOS DE USO E PRIVACIDADE</h4>
+                  <h4 class="text-center">TERMOS DE USO E PRIVACIDADE</h4>
                   <br>
                 </div>
                 <p>Se você está aqui é porque você quer saber mais sobre as obrigações e direitos que lhe correspondem como um usuário deste site, WebPassos: https://webpassos.com.br. Nosso dever é informar e o seu é estar devidamente informado.</p>  
                 <p>Esta Política de Privacidade é para informá-lo com total transparência sobre a finalidade deste site e tudo o que afeta os dados que nos forneça, bem como as obrigações e direitos que lhe correspondem.</p>
                 <p>Para começar, você deve saber que este site se adapta a normativa vigente em matéria de proteção de dados, o que afeta os dados pessoais que nos forneça com o seu consentimento expresso e os cookies que utilizamos para que este site funcione corretamente e possa desenvolver sua atividade.</p>
                 <p>Especificamente, este site se ajusta ao cumprimento das seguintes normas:</p>
-                <ul style="color:black;">
+                <ul class="text-black">
                   <li>Lei geral de proteção de dados pessoais (projeto de lei aprovado recentemente, baseado na lei Europeia)</li>
                   <li>Lei Brasileira n.º 12.965, de 2014</li>
                   <li>RGPD (Regulamento (UE) 2016/679 do Parlamento Europeu e do Conselho, de 27 de abril de 2016, relativo à proteção das pessoas físicas) que é a nova legislação da União Europeia que unifica a regulamentação do tratamento dos dados pessoais nos diferentes países da UE.</li>
@@ -126,12 +110,12 @@
             <div class= "pr-3 pl-3">
               <div  class= "mr-5 ml-3">
                 <div class="justify-content-center text-center" >
-                  <h4 style="text-align: center;">CONDIÇÕES DE USO</h4>
+                  <h4 class="text-center">CONDIÇÕES DE USO</h4>
                   <br>
                 </div>
                 <p>Você deve saber, para sua tranquilidade, que sempre será solicitado o seu consentimento expresso para obter seus dados com a respectiva finalidade especificada em cada caso, o que implica que, em caso de dar esse consentimento, você leu e concorda com esta Política de Privacidade.</p>
                 <p>No momento em que acesse e utiliza esta página web, está assumindo a sua condição de usuário com seus correspondentes direitos e obrigações.</p>
-                <ul style="color:black;">
+                <ul class="text-black">
                   <li>Se você é maior de 13 anos, poderá registar-se como utilizador deste site sem o prévio consentimento de seus pais ou tutores.</li>
                   <li>Se você é menor de 13 anos, necessitará o consentimento de seus pais ou tutores para o tratamento dos seus dados pessoais.</li>
                   <li>Nunca solicito informações pessoais, a menos que realmente seja necessário para prestar os serviços que ofereço nesse website.</li>
@@ -147,11 +131,11 @@
             <div class= "pr-3 pl-3">
               <div  class= "mr-5 ml-3" >
                 <div class="justify-content-center text-center" >
-                  <h4 style="text-align: center;">REGISTRO E FINALIDADE DOS SEUS DADOS</h4>
+                  <h4 class="text-center">REGISTRO E FINALIDADE DOS SEUS DADOS</h4>
                   <br>
                 </div>
                 <p>Em função do formulário ou seção que acesse será solicitado exclusivamente os dados necessários com as finalidades descritas a seguir. Em todo momento, você deve dar o seu consentimento expresso, quando lhe solicitamos informações pessoais para as seguintes finalidades:</p>
-                <ul style="color:black;">
+                <ul class="text-black">
                   <li>As finalidades concretas que particularmente são indicadas em cada uma das páginas ou seções onde aparece o formulário de registro ou contato eletrônico.</li>
                   <li>Com carácter geral, para atender os seus pedidos, comentários, perguntas ou qualquer tipo de pedido que realize como pessoa através de qualquer uma das formas de contato que coloco à sua disposição.</li>
                   <li>Para obter informações sobre consultas, pedidos, atividades, produtos, novidades e/ou serviços; via e-mail, fax, WhatsApp, Skype, telefone fornecido, sms e mms.</li>

@@ -18,55 +18,43 @@
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="fonts/social midia/flaticon.css">
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" >
    
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
     <script src="js/mascara.js"></script>
 
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <body>
     <div class="wrapper">
-      <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
-          </div>
-        </div>
-        <div class="site-mobile-menu-body"></div>
-      </div>
-
-      <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+      
+      <header class="site-navbar py-4 " role="banner">
         <div class="container-fluid ">
           <div class="d-flex align-items-center justify-content-between">
             <div class="text-left"><a href="index.php#home"><img src="images/logo.png" href="index.html" class="site-logo"></img></a></div>
 
-            <div class="mx-auto text-center">
+            <div class="mx-auto d-lg-inline-block">
               <nav class="site-navigation" role="navigation"i>
-                <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block text-center m-0 p-0">
+                <ul class="site-menu mx-auto m-0 p-0">
+                  <li class="d-lg-none"><span class="icon-close2" id="btnclose"></span></li>
                   <li><a href="index.php#servicos" class="nav-link">SERVIÇOS</a></li>
                   <li><a href="index.php#produtos" class="nav-link">PRODUTOS</a></li>
                   <li><a href="index.php#sobrenos" class="nav-link">QUEM SOMOS</a></li>
                   <li><a href="index.php#orcamento" class="nav-link">ORÇAMENTO</a></li>
+                  <li class="d-lg-none"><a id="btnlogin" href="contato.php">CONTATO</a></li>
                 </ul>
               </nav>
             </div>
             <div class="parte-direita text-right">
               <nav class="site-navigation" role="navigation"i>
-                <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
+                <ul class="site-menu d-none d-lg-inline-block mx-auto  m-0 p-0">
                   <li><a id="btnlogin" href="contato.php">CONTATO</a></li>
                 </ul>
               </nav>
             </div>
             <div class="text-right">
-              <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3 text-white"></span></a>
+              <a id="btntoggle" class="d-inline-block d-lg-none float-right"><span class="icon-menu h3 text-white"></span></a></
             </div>
           </div>
         </div>
