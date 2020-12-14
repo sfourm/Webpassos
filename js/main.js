@@ -9,7 +9,7 @@ $(window).scroll(function () {
 		$('.site-navbar').removeClass('py-4');
 
 	} else if (scrollTop  < 20) {
-      $('.site-navbar').css("background-color", "rgba(0, 0, 0, 1)");
+      $('.site-navbar').css("background-color", "rgba(0, 0, 0, 0)");
       $('.site-mobile-menu .site-menu > li > span').css("padding-top", "30px");
 		$('.site-navbar').removeClass('position-fixed')
 		$('.site-navbar').removeClass('menu-padding');

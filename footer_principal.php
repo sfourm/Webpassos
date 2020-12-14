@@ -30,7 +30,7 @@
                         <a href="https://www.facebook.com/webpassos.sistemas" target="blank" rel="noopener noreferrer">Facebook<span class="flaticon-001-facebook pl-2"></span></a>
                     </div>
                     <div class="menu__footer__link">  
-                        <a target="blank" href="https://api.whatsapp.com/send?1=pt_BR&amp;phone=55335992442709" title="(35) 9 9271-1145">Whatsapp<span class="flaticon-011-whatsapp pl-1"></span></a>
+                        <a target="blank" href="https://api.whatsapp.com/send?phone=5535992711145&text=Gostaria%20de%20entrar%20em%20contato">Whatsapp<span class="flaticon-011-whatsapp pl-1"></span></a>
                     </div>
                 </div>
             </div>

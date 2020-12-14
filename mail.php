@@ -1,7 +1,8 @@
 <?php
-date_default_timezone_set('America/Sao_Paulo');
+require_once 'mailer/class.phpmailer.php';
+require_once 'mailer/class.smtp.php';
 
-// Passando os dados obtidos pelo formulário para as variáveis abaixo
+//Variáveis Globais
 
 $emaildestinatario = 'contato@webpassos.com.br';
 $comcopiaoculta = 'samuelsergio@webpassos.com.br';
@@ -17,31 +18,38 @@ $quebra_linha = "\n"; //Se "não for Windows"
 $nomeremetente = $nome;
 $emailremetente = $email;
 
-/* Montando a mensagem a ser enviada no corpo do e-mail. */
-$mensagemHTML =  '<p>Nome: '.$nome.' '.$sobrenome.'</p>
-<p>Email: '.$email.'</p>
-<p>Telefone: '.$telefone.'</p>
-<p>Mensagem: '.$mensagem.'</p>
-<p>Data: '.$data.'</p>';
+// EMAIL - PHPMAILER
 
+$mail = new PHPMailer;
+$mail->setLanguage('br');                                 // Habilita as saídas de erro em Português
+$mail->CharSet='UTF-8';                                   // Habilita o envio do email como 'UTF-8'
 
-/* Montando o cabeçalho da mensagem */
-$headers = "MIME-Version: 1.1" .$quebra_linha;
-$headers .= "Content-type: text/html; charset=uft-8" .$quebra_linha;
+//$mail->SMTPDebug = 3;                                   // Habilita a saída do tipo "verbose"
 
-// Perceba que a linha acima contém "text/html", sem essa linha, a mensagem não chegará formatada.
-$headers .= "From: " . $emailsender . $quebra_linha;
-$headers .= "Reply-To: " . $emailremetente . $quebra_linha;
-// Note que o e-mail do remetente será usado no campo Reply-To (Responder Para)
-/* Enviando a mensagem */
+$mail->isSMTP();                                          // Configura o disparo como SMTP
+$mail->Host = 'email-ssl.com.br';                         // Especifica o enderço do servidor SMTP da Locaweb
+$mail->SMTPAuth = true;                                   // Habilita a autenticação SMTP
+$mail->Username = 'nao-responder@webpassos.com.br';       // Usuário do SMTP
+$mail->Password = 'Samuel1324@';                          // Senha do SMTP
+$mail->SMTPSecure = 'ssl';                                // Habilita criptografia TLS | 'ssl' também é possível
+$mail->Port = 465;                                        // Porta TCP para a conexão
 
-//É obrigatório o uso do parâmetro -r (concatenação do "From na linha de envio"), aqui na Locaweb:
-if(mail($emaildestinatario, $assunto, $mensagemHTML, $headers ,"-r".$emailsender)){ 
+$mail->From = $emailsender;                               // Endereço previamente verificado no painel do SMTP
+$mail->FromName = 'Contato - WebPassos';               // Nome no remetente
+$mail->addAddress('samuelnunessergio@gmail.com');         // Acrescente um destinatário
+$mail->addAddress($emaildestinatario);                    // O nome é opcional
+$mail->addReplyTo($email, 'Informação');
+$mail->addCC('cc@exemplo.com');
+$mail->addBCC('bcc@exemplo.com');
+$mail->isHTML(true);                                      // Configura o formato do email como HTML
+$mail->Subject = 'WebPassos - Email de Contato';
+$mail->Body    =  '<p>Nome: '.$nome.' '.$sobrenome.'</p><p>Email: '.$email.'</p><p>Telefone: '.$telefone.'</p><p>Mensagem: '.$mensagem.'</p> <p>Data: '.$data.'</p>';
+$mail->AltBody = '<p>Nome: '.$nome.' '.$sobrenome.'</p><p>Email: '.$email.'</p><p>Telefone: '.$telefone.'</p><p>Mensagem: '.$mensagem.'</p> <p>Data: '.$data.'</p>';
 
+if(!$mail->send()) {
+    echo 'Email não pode ser enviado';
+    echo 'Mensagem de erro: ' . $mail->ErrorInfo;
+} else {
     echo 'Email enviado com Sucesso!';
-
-}else{
-
-    echo 'Não foi possivel enviar o email';
 }
-?>
+ ?>
