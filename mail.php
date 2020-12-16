@@ -1,6 +1,7 @@
 <?php
 require_once 'mailer/class.phpmailer.php';
 require_once 'mailer/class.smtp.php';
+require_once 'control/conexao.php';
 
 //Variáveis Globais
 
@@ -52,4 +53,26 @@ if(!$mail->send()) {
 } else {
     echo 'Email enviado com Sucesso!';
 }
+
+$bdmail = $pdo->prepare("INSERT into emails (nome, sobrenome, email, telefone, mensagem, data_envio) values (:nome, :sobrenome, :email, :telefone, :mensagem, NOW())");
+$bdmail->bindValue(":nome", $nome);
+$bdmail->bindValue(":sobrenome", $sobrenome);
+$bdmail->bindValue(":email", $email);
+$bdmail->bindValue(":telefone", $telefone);
+$bdmail->bindValue(":mensagem", $mensagem);
+$bdmail->execute();
+
+$bduser = $pdo->query("SELECT * FROM users where email = '$_POST[email]'"); 
+$dados = $bduser->fetchAll(PDO::FETCH_ASSOC);
+if(@count($dados) == 0){
+
+    $bduser = $pdo->prepare("INSERT into users (nome, sobrenome, email, telefone) values (:nome, :sobrenome, :email, :telefone)");
+    $bduser->bindValue(":nome", $nome);
+    $bduser->bindValue(":sobrenome", $sobrenome);
+    $bduser->bindValue(":email", $email);
+    $bduser->bindValue(":telefone", $telefone);
+    $bduser->execute();
+
+}
+
  ?>
