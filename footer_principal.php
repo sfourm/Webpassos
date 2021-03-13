@@ -24,13 +24,13 @@
                 <h4>NOSSAS REDES SOCIAIS</h4>
                 <div class="menu__footer text-left">
                     <div class="menu__footer__link">
-                        <a class="fa fa-instagram"></a><a href="https://www.instagram.com/webpassos_/" target="blank" rel="noopener noreferrer">Instagram<span class="flaticon-048-instagram pl-1"></span></a>
+                        <a href="https://www.instagram.com/webpassos_/" target="blank" rel="noopener noreferrer">Instagram<span class="flaticon-048-instagram pl-1"></span></a>
                     </div>
                     <div class="menu__footer__link">
-                        <a href="https://www.facebook.com/webpassos.sistemas" target="blank" rel="noopener noreferrer">Facebook<span class="flaticon-001-facebook pl-2"></span></a>
+                        <a href="https://www.facebook.com/webpassos2020" target="blank" rel="noopener noreferrer">Facebook<span class="flaticon-001-facebook pl-2"></span></a>
                     </div>
                     <div class="menu__footer__link">  
-                        <a target="blank" href="https://api.whatsapp.com/send?phone=5535992711145&text=Gostaria%20de%20entrar%20em%20contato">Whatsapp<span class="flaticon-011-whatsapp pl-1"></span></a>
+                        <a href="https://api.whatsapp.com/send?phone=5535992711145&text=Gostaria%20de%20entrar%20em%20contato">Whatsapp<span class="flaticon-011-whatsapp pl-1"></span></a>
                     </div>
                 </div>
             </div>

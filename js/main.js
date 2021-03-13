@@ -18,44 +18,22 @@ $(window).scroll(function () {
 
 });
 
+(function ($) {
+   //Humberger Menu
+   $(".humberger__open").on('click', function () {
+       $(".humberger__menu__wrapper").addClass("show__humberger__menu__wrapper");
+       $(".navbar-toggler-awesome").removeClass("fa-bars");
+       $(".navbar-toggler-awesome").addClass("fa-times");
+       $(".humberger__menu__overlay").addClass("active");
 
-if ($(window).width() <= 991){
-   $('.site-navigation').removeClass('site-navigation').addClass('site-mobile-menu');
-   // ou
-   $('.site-navigation').attr('class','site-mobile-menu');
- }else if ($(window).width() > 991){
-    $('.site-mobile-menu').removeClass('site-mobile-menu').addClass('site-navigation');
-    // ou
-    $('.site-mobile-menu').attr('class','site-navigation');
- }
-
-window.addEventListener('resize', function () {
-   //var altura = window.innerHeight;
-   var largura = window.innerWidth;
-
-   if (largura <= 991){
-      $('.site-navigation').removeClass('site-navigation').addClass('site-mobile-menu');
-   } else if (largura > 991){
-      $('.site-mobile-menu').removeClass('site-mobile-menu').addClass('site-navigation');
-   }
-});
-
-
-$(document).ready(function() {
-   //Cache dos elementos em variáveis
-  var botao = $('#btntoggle');
-  var menuToogle = $('.site-mobile-menu');    
-   //Clica no botão para abrir e fechar o dropDown
-   botao.on('click', function(event){
-      menuToogle.css("right", "0px");
-       //Evita que o evento seja notificado aos outros elementos. 
-       event.stopPropagation();
+       $("body").addClass("over_hid");
    });
-    
-   //Clicando no html vai fechar o dorpDown
-   $('html').on('click', function(){
-      menuToogle.css("right", "-200px");
+
+   $(".humberger__menu__overlay").on('click', function () {
+       $(".humberger__menu__wrapper").removeClass("show__humberger__menu__wrapper");
+       $(".navbar-toggler-awesome").removeClass("fa-times");
+       $(".navbar-toggler-awesome").addClass("fa-bars");
+       $(".humberger__menu__overlay").removeClass("active");
+       $("body").removeClass("over_hid");
    });
-});
-
-
+})(jQuery)

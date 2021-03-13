@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet" />
    
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
@@ -28,33 +29,48 @@
   </head>
   <body>
     <div class="wrapper">
-      
       <header class="site-navbar py-4 " role="banner">
         <div class="container-fluid ">
           <div class="d-flex align-items-center justify-content-between">
             <div class="text-left"><a href="index.php#home"><img src="images/logo.png" href="index.html" class="site-logo"></img></a></div>
 
-            <div class="mx-auto d-lg-inline-block">
+            <div class="mx-auto d-lg-inline-block collapse navbar-collapse d-none" id="navbarsExampleDefault">
               <nav class="site-navigation" role="navigation"i>
                 <ul class="site-menu mx-auto m-0 p-0">
-                  <li class="d-lg-none"><span class="icon-close2" id="btnclose"></span></li>
                   <li><a href="index.php#servicos" class="nav-link">SERVIÇOS</a></li>
                   <li><a href="index.php#produtos" class="nav-link">PRODUTOS</a></li>
                   <li><a href="index.php#sobrenos" class="nav-link">QUEM SOMOS</a></li>
                   <li><a href="index.php#orcamento" class="nav-link">ORÇAMENTO</a></li>
-                  <li class="d-lg-none"><a id="btnlogin" href="contato.php">CONTATO</a></li>
                 </ul>
               </nav>
             </div>
             <div class="parte-direita text-right">
               <nav class="site-navigation" role="navigation"i>
-                <ul class="site-menu d-none d-lg-inline-block mx-auto  m-0 p-0">
+                <ul class="site-menu d-none d-lg-inline-block mx-auto m-0 p-0">
                   <li><a id="btnlogin" href="contato.php">CONTATO</a></li>
                 </ul>
               </nav>
             </div>
-            <div class="text-right">
-              <a id="btntoggle" class="d-inline-block d-lg-none float-right"><span class="icon-menu h3 text-white"></span></a></
+            
+            <div class="humberger__open navbar-toggler text-center d-lg-none">
+              <i class="text-white text-center navbar-toggler-awesome fas fa-bars"></i>
+            </div>
+
+            <div class="humberger__menu__overlay"></div>
+            <div class="humberger__menu__wrapper">
+                <div class="humberger__menu__logo">
+                    <a href="index.php"><img src="images/logo.png" alt=""></a>
+                </div>
+                <nav class="humberger__menu__nav mobile-menu order-1">
+                    <ul>
+                      <li><a href="index.php#servicos" class="nav-link">SERVIÇOS</a></li>
+                      <li><a href="index.php#produtos" class="nav-link">PRODUTOS</a></li>
+                      <li><a href="index.php#sobrenos" class="nav-link">QUEM SOMOS</a></li>
+                      <li><a href="index.php#orcamento" class="nav-link">ORÇAMENTO</a></li>
+                      <li class="text-center mt-4"><a id="btnlogin" href="contato.php">CONTATO</a></li>
+                    </ul>
+                </nav>
+                <div id="mobile-menu-wrap"></div>
             </div>
           </div>
         </div>

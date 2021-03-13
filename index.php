@@ -20,22 +20,22 @@
                         </div>
                         
                         <div class="col-lg-4 col-md-12">
-                          <form id="form-2" name="form-2" method="post" class="form-box row">
+                          <form id="form-2" name="form-2" method="post" class="form-box">
                             <br>
                             <h3 class="h4 mb-4 text-white" >Junte-se a nós! </h3>
                             <p>Faça seu orçamento gratuitamente!</p>
-                            <div class="form-group col-12 justify-content-center text-center">
-                              <input id="nome2" name="nome2" type="text" class="form-control col-5 text-capitalize" placeholder="Nome" required>
-                              <input id="sobrenome2" name="sobrenome2" type="text" class="form-control col-5 text-capitalize" placeholder="Sobrenome" required>
+                            <div class="form-group justify-content-center text-center row">
+                              <input id="nome2" name="nome2" type="text" class="form-control text-capitalize col-lg-5 col-md-5 col-sm-12" placeholder="Nome" required>
+                              <input id="sobrenome2" name="sobrenome2" type="text" class="form-control text-capitalize col-lg-5 col-md-5 col-sm-12" placeholder="Sobrenome" required>
                             </div>
-                            <div class="form-group col-12 justify-content-center text-center">
-                              <input id="email2" name="email2" type="email" class="form-control col-5" placeholder="Email" required>
-                              <input id="telefone2" name="telefone2" type="text" class="form-control col-5" placeholder="Telefone" required>
+
+                            <div class="form-group justify-content-center text-center row">
+                              <input id="email2" name="email2" type="email" class="form-control col-lg-5 col-md-5 col-sm-12" placeholder="Email" required>
+                              <input id="telefone2" name="telefone2" type="text" class="form-control col-lg-5 col-md-5 col-sm-12" placeholder="Telefone" required>
                             </div>
-                            <div class="form-group col-12 justify-content-center text-center d-flex">
-                              <textarea id="mensagem2" name="mensagem2" class="form-control col-10  " rows="3" placeholder="Escreva sua mensagem!" required ></textarea>
-                            </div>
-                            <div class="pb-3 text-center form-group">
+
+                            <div class="justify-content-center text-center row form-mensagem">
+                              <textarea id="mensagem2" name="mensagem2" class="form-control col-lg-11 col-md-11 col-sm-12 col-xs-10" rows="3" placeholder="Escreva sua mensagem!" required ></textarea> 
                               <button type="submit" class="btn btncadastrar" id="btn-enviar-email">Enviar</button>
                             </div>
                             <div class="col-md-12 text-center mt-3 text-info" id="div-mensagem2"></div>
@@ -48,6 +48,7 @@
                 </div>
               </div>
             </div>
+
             <div class="carousel-item">
               <div class="slide2" style="background-image: url('images/FUNDO.jpg');" data-stellar-background-ratio="0.5" alt="Second Slide">
                 <div class="container">
@@ -70,6 +71,7 @@
                 </div>
               </div>
             </div>
+
             <div>
               <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
@@ -273,10 +275,21 @@
           <div class="row justify-content-center">
             <div class="col-md-6 col-lg-4" id="profissional">
               <div class="desenvolvedor">
+                <img src="images/pro2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
+                <div >
+                  <h3>Diego Becker</h3>
+                  <p class="position">Desenvolvedor junior</p>
+                  <p>"Nossa maior fraqueza está em desistir. O caminho mais certo de vencer é tentar mais uma vez." - Thomas Edison</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4" id="profissional">
+              <div class="desenvolvedor">
                 <img src="images/pro1.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
                 <div >
                   <h3>Samuel Sergio</h3>
-                  <p class="position">Desenvolvedor junior</p>
+                  <p class="position">Desenvolvedor Fullstack</p>
                   <p>"E não nos cansemos de fazer o bem, pois no tempo próprio colheremos, se não desanimarmos" - Gálatas 6:9</p>
                 </div>
               </div>
@@ -284,11 +297,11 @@
 
             <div class="col-md-6 col-lg-4" id="profissional">
               <div class="desenvolvedor">
-                <img src="images/pro2.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
+                <img src="images/pro3.jpg" alt="Image" class="img-fluid w-50 rounded-circle mx-auto mb-4">
                 <div >
-                  <h3>Diego Becker</h3>
-                  <p class="position">Desenvolvedor junior</p>
-                  <p>"Nossa maior fraqueza está em desistir. O caminho mais certo de vencer é tentar mais uma vez." - Thomas Edison</p>
+                  <h3>Arthur Pereira</h3>
+                  <p class="position">Desenvolvedor Fullstack</p>
+                  <p>"Nossas virtudes e nossos defeitos são inseparáveis, assim como a força e a matéria. Quando se separam, o homem deixa de existir." - Nikola Tesla</p>
                 </div>
               </div>
             </div>
